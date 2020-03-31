@@ -1,17 +1,17 @@
 import React from "react";
-import "./EvidenceStyle.css"
+import "../EvidenceStyle.css"
 import PropTypes from "prop-types"
-import Spiner from "./components/Spiner";
+import Spiner from "./Spiner/Spiner";
 
-export default function EvidenceSlave({ClassName, count, title}) {
+
+export default function EvidenceSlave({ClassName, ClassNameSpiner, count, title}) {
     return (
         <div className={ClassName} >
-            <Spiner/>
+            <Spiner ClassNameSpiner={ClassNameSpiner}/>
             <h2>{count}</h2>
             <h5>{title}</h5>
         </div>
     )
-
 }
 
 EvidenceSlave.defaultProps = {
@@ -19,6 +19,7 @@ EvidenceSlave.defaultProps = {
 }
 
 EvidenceSlave.propTypes = {
+    ClassNameSpiner: PropTypes.string,
     ClassName: PropTypes.string,
     title:  PropTypes.string,
     count: PropTypes.string

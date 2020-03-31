@@ -21,7 +21,7 @@ $small-spinner-dimensions: $main-spinner-dimensions * 1; //width and height of s
   }
 }
 
-.spinner.spinner-1 {
+.spinner.spinners {
   @keyframes anti-rotate-animation {
     50% {
       transform: rotate(0deg);
@@ -36,11 +36,53 @@ $small-spinner-dimensions: $main-spinner-dimensions * 1; //width and height of s
     height: $main-spinner-dimensions;
     border-color: rgba(#E3E3E3, 1);
   }
+}
+
+.spinner.spinners.spinner-1 {
 
   &:after {
     width: $small-spinner-dimensions;
     height: $small-spinner-dimensions;
     border-bottom-color:rgba($basic-dark-color, 1);
+    border-right-color: rgba($basic-dark-color, 1);
+    border-top-color: rgba($basic-dark-color, 1);
+    border-left-color: rgba($basic-dark-color, 0);
+    animation: anti-rotate-animation 5s linear 3s infinite;
+  }
+}
+
+.spinner.spinners.spinner-2 {
+
+  &:after {
+    width: $small-spinner-dimensions;
+    height: $small-spinner-dimensions;
+    border-bottom-color:rgba($basic-dark-color, 1);
+    border-right-color: rgba($basic-dark-color, 1);
+    border-top-color: rgba($basic-dark-color, 0);
+    border-left-color: rgba($basic-dark-color, 0);
+    animation: anti-rotate-animation 5s linear 3s infinite;
+  }
+}
+
+.spinner.spinners.spinner-3 {
+
+  &:after {
+    width: $small-spinner-dimensions;
+    height: $small-spinner-dimensions;
+    border-bottom-color:rgba($basic-dark-color, 0);
+    border-right-color: rgba($basic-dark-color, 1);
+    border-top-color: rgba($basic-dark-color, 0);
+    border-left-color: rgba($basic-dark-color, 0);
+    animation: anti-rotate-animation 5s linear 3s infinite;
+  }
+}
+
+.spinner.spinners.spinner-4 {
+
+  &:after {
+    width: $small-spinner-dimensions;
+    height: $small-spinner-dimensions;
+    border-bottom-color:rgba($basic-dark-color, 0);
     border-right-color: rgba($basic-dark-color, 1);
     border-top-color: rgba($basic-dark-color, 1);
     border-left-color: rgba($basic-dark-color, 0);
