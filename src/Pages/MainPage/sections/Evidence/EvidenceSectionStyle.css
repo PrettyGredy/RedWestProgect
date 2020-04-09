@@ -1,0 +1,26 @@
+.Evidence_Section {
+    background-color: white;
+    height: 345px;
+    width: 1150px;
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: auto auto;
+    grid-column-gap: 100px;
+    justify-content: center;
+    top: 0;
+}
+
+.Evidence_Title {
+    grid-column: 1/5;
+    margin-top: 50px;
+    text-align: center;
+    font-family: adineue PRO Cyr, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+}

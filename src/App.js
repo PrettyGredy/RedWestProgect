@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Evidence_Primary from "./MainPage/components/Evidence/EvidencePrimary";
+import MainPage from "./Pages/MainPage/MainPage";
 
 const App = () => {
     return (
         <div>
-            <Evidence_Primary/>
+            <MainPage/>
         </div>
     )
 }
