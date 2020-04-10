@@ -1,0 +1,10 @@
+.spiner {
+  //animation: fari 2s infinite;
+  position: absolute;
+}
+
+@keyframes fari {
+  100% {
+    transform: rotate(360deg);
+  }
+}

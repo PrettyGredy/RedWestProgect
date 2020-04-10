@@ -18,9 +18,10 @@
       weight: bold;
       size: 36px;
     }
+    position: relative;
     line-height: 34px;
     color: #000000;
-    margin: 0;
+    margin:auto;
     padding-top: 65px;
   }
 
@@ -29,38 +30,10 @@
       weight: normal;
       size: 18px;
     }
+    margin-top: 95px;
     line-height: 17px;
     color: #7E7E7E;
   }
 }
 
-.Spiners {
-  height: 171px;
-  width: 171px;
-  animation: landi 2s infinite;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-
-  &.n1 {
-    background-image: url("images/Group 9-1.png");
-  }
-
-  &.n2 {
-    background-image: url("images/Group 9-2.png");
-  }
-
-  &.n3 {
-    background-image: url("images/Group 9-3.png");
-  }
-
-  &.n4 {
-    background-image: url("images/Group 9-4.png");
-  }
-}
-
-@keyframes landi {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 

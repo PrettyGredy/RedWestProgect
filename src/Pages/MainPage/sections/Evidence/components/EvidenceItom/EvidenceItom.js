@@ -1,7 +1,9 @@
 import React from "react";
-import "./EvidenceItom.scss"
+import "./EvidenceItomStyle.scss"
 import PropTypes from "prop-types"
-import GR9 from "./images/Group 9-2.svg"
+import GR9 from "./images/Group 9-1.svg"
+import Spiner from "./Spiner/Spiner";
+
 
 export default function EvidenceItom({type, count, title}) {
     let Class;
@@ -14,12 +16,8 @@ export default function EvidenceItom({type, count, title}) {
 
     return (
         <div className="Evidence_Slave">
-            <div className={Class}>
-                <h2>{count}</h2>
-            </div>
-            <div>
-                <embed src={GR9}/> <h2>{count}</h2>
-            </div>
+            <Spiner/>
+            <h2>{count}</h2>
             <h5>{title}</h5>
         </div>
     )
