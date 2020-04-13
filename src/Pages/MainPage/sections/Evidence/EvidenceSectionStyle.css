@@ -1,4 +1,4 @@
-.Evidence_Section {
+.eidence-section {
     background-color: white;
     height: 345px;
     width: 1150px;
@@ -11,7 +11,7 @@
     top: 0;
 }
 
-.Evidence_Title {
+.evidence-title {
     grid-column: 1/5;
     margin-top: 50px;
     text-align: center;
